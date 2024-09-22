@@ -289,7 +289,17 @@ fig,ax=plt.subplots(figsize=fig_dims)
 fig=sns.lineplot(x=years,y=total_dr,ax=ax).set(title="year vs duration")
 plt.xticks(rotation=60)
 ```
+<img width="852" alt="Screenshot 2024-09-23 at 0 16 19" src="https://github.com/user-attachments/assets/6f2e58b6-e1e6-4b1f-b09d-12d37f48b1ec">
 
+**Graph Explanation**
+- This graph is a line chart that visually represents the changes in the average length of songs released each year.
+
+**Horizontal Axis: Year**
+- Vertical Axis: Song Length (seconds)
+**Insights from the Graph**
+- Decreasing Trend in Song Length: Overall, there is a noticeable trend of decreasing song length year by year. A particularly sharp decline is observed from the 1900s to the 1920s, followed by a gradual decrease thereafter.
+
+**Magnitude of Variability:** There are significant fluctuations in song length from year to year. Some years have a predominance of relatively short songs, while other years may feature longer songs, indicating considerable variation in trends across different years.
 ```python
 plt.title('Duration of songs in different Genres')
 sns.color_palette('crest', as_cmap=True)
