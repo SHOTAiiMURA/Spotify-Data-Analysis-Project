@@ -85,9 +85,11 @@ tracks_data.duration.head()
 <img width="234" alt="Screenshot 2024-09-22 at 22 27 46" src="https://github.com/user-attachments/assets/a90d1ec0-adef-482a-8e33-14dcce12e9a6">
 
 ```python
-tracks_data["duration"]=tracks_data["duration_ms"].apply(lambda x: round(x/1000))
-tracks_data.drop('duration_ms', inplace = True, axis=1)
-tracks_data.duration.head()
+td = tracks_data.drop(['key','mode','explicit'], axis=1).corr(method = 'pearson')
+plt.figure(figsize=(9,5))
+hmap = sns.heatmap(td, annot = True, fmt = '.1g', vmin=-1, vmax=1, center=0, cmap='Greens', linewidths=0.1, linecolor='black')
+hmap.set_title('Correlation HeatMap')
+hmap.set_xticklabels(hmap.get_xticklabels(), rotation=90)
 ```
 <img width="805" alt="Screenshot 2024-09-22 at 22 29 32" src="https://github.com/user-attachments/assets/f27f6bb8-6c8c-40cc-8113-eb34c07beaec">
 
