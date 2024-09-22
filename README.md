@@ -1,13 +1,15 @@
 # Spotify-Data-Analysis-Project
-
- 
+# Introduction
+# Requirement
 ```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 ```
+# Exploring the codes and dataset
 ```python
+#reading datasets
 tracks_data = pd.read_csv("tracks_data.csv")
 feature_data = pd.read_csv("SpotifyFeatures.csv")
 ```
@@ -21,13 +23,13 @@ tracks_data.head()
 pd.isnull(tracks_data).sum()
 ```
 <img width="192" alt="Screenshot 2024-09-22 at 22 24 03" src="https://github.com/user-attachments/assets/6a620bba-bee4-4472-ad75-78663509deae">
-
+# If there is Null Values in the Dataset
 ```python
 #checking null in feature data
 pd.isnull(feature_data).sum()
 ```
 <img width="183" alt="Screenshot 2024-09-22 at 22 24 44" src="https://github.com/user-attachments/assets/34958683-e40d-447d-85a1-e136180ae3af">
-
+# Overview of dataset
 ```python
 #Checking information in tracks data
 tracks_data.info()
@@ -40,6 +42,7 @@ feature_data.info()
 ```
 <img width="389" alt="Screenshot 2024-09-22 at 22 25 44" src="https://github.com/user-attachments/assets/21f35080-5c80-49b5-a128-448cc7ca7030">
 
+# Analysing the dataset for insights
 ```python
 #Reaserching the 10 least popular songs in the Spotify
 leastSongs = tracks_data.sort_values("popularity",ascending=True)[0:10]
