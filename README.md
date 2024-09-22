@@ -116,11 +116,47 @@ sns.regplot(data=sample_sp, y='loudness', x='energy', color='#ffac33').set(title
 ```
 <img width="711" alt="Screenshot 2024-09-22 at 22 30 10" src="https://github.com/user-attachments/assets/13a622cc-d726-426b-b6b4-2bbf96bc92e3">
 
+**Explanation of the Regression Plot**
+
+- This graph is called a regression plot and visually represents the relationship between two variables: loudness and energy of the songs.
+
+**How to Read the Graph**
+
+- X-axis: Energy (a measure of how lively or energetic a song is)
+- Y-axis: Loudness (a measure of the volume of the song)
+- Orange Dots: Represent individual song data, plotted according to their values on the X and Y axes.
+- Orange Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
+**Insights from the Graph**
+**Relationship between Energy and Loudness:**
+- The higher the energy of a song, the higher its loudness tends to be. This suggests that, in general, more energetic songs are also louder.
+
+**Strength of the Relationship:**
+- The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
+
 ```python
 plt.figure(figsize=(8,4))
 sns.regplot(data=sample_sp, y='popularity', x='energy', color='#3372ff').set(title='Regression Plot - Popularity vs Energy Correlation')
 ```
 <img width="701" alt="Screenshot 2024-09-22 at 22 30 34" src="https://github.com/user-attachments/assets/488beb5e-0ff4-43f5-a0f7-df41f235a899">
+
+**Explanation of the Regression Plot**
+
+- This regression plot shows the relationship between two variables: popularity and energy of the songs.
+
+**How to Read the Graph**
+
+- X-axis: Energy (a measure of how lively or energetic a song is)
+- Y-axis: Popularity (a measure of the song’s popularity)
+- Blue Dots: Represent individual song data, plotted according to their values on the X and Y axes.
+- Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
+**Insights from the Graph**
+
+**Relationship between Energy and Popularity:**
+- Songs with higher energy tend to have higher popularity. This suggests that, in general, more energetic songs are more likely to become popular.
+
+**Strength of the Relationship:**
+- The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
+
 
 ```python
 plt.figure(figsize=(8,4))
@@ -128,11 +164,46 @@ sns.regplot(data=sample_sp, y='popularity', x='acousticness', color='#3372ff').s
 ```
 <img width="686" alt="Screenshot 2024-09-22 at 22 31 01" src="https://github.com/user-attachments/assets/abe4fd11-9746-4a80-b91e-ae119d97f6d2">
 
+**Explanation of the Regression Plot**
+
+- This regression plot shows the relationship between two variables: popularity and acousticness of the songs.
+
+**How to Read the Graph**
+- X-axis: Acousticness (a measure of how much a song incorporates acoustic instruments)
+- Y-axis: Popularity (a measure of the song’s popularity)
+- Blue Dots: Represent individual song data, plotted according to their values on the X and Y axes.
+- Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
+**Insights from the Graph**
+
+**Relationship between Acousticness and Popularity:**
+- Songs with higher acousticness (e.g., those using acoustic guitars) tend to have lower popularity. This suggests that, in general, acoustic songs are less likely to become popular.
+
+**Strength of the Relationship:**
+- The slope of the regression line is negative, indicating a negative correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
 ```python
 plt.figure(figsize=(8,4))
 sns.regplot(data=sample_sp, y='popularity', x='danceability', color='#3372ff').set(title='Regression Plot - Popularity vs Danceability Correlation')
 ```
 <img width="678" alt="Screenshot 2024-09-22 at 22 31 29" src="https://github.com/user-attachments/assets/6bca1993-2d91-4d9c-abb0-08716fd87597">
+
+**Explanation of the Regression Plot**
+
+- This regression plot shows the relationship between two variables: popularity and danceability (how easy it is to dance to a song).
+
+**How to Read the Graph**
+
+- X-axis: Danceability (a measure of how easy it is to dance to a song)
+- Y-axis: Popularity (a measure of the song’s popularity)
+- Blue Dots: Represent individual song data, plotted according to their values on the X and Y axes.
+- Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
+**Insights from the Graph**
+
+**Relationship between Danceability and Popularity:**
+- Songs with higher danceability tend to have higher popularity. This suggests that, in general, songs that are easier to dance to are more likely to become popular.
+
+**Strength of the Relationship:**
+- The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
+
 
 ```python
 tracks_data['dates']=tracks_data.index.get_level_values('release_date')
