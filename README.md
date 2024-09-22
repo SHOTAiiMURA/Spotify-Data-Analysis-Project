@@ -1,4 +1,6 @@
 # Spotify-Data-Analysis-Project
+![image](https://github.com/user-attachments/assets/3fc67c7d-703a-46b8-8a95-f0acb49b84ac)
+
 # Introduction
 # Requirement
 ```python
