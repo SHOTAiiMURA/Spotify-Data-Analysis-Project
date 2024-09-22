@@ -97,6 +97,8 @@ hmap.set_xticklabels(hmap.get_xticklabels(), rotation=90)
 sample_sp=tracks_data.sample(int(0.004*len(tracks_data)))
 print(len(sample_sp))
 ```
+<img width="48" alt="Screenshot 2024-09-22 at 23 08 36" src="https://github.com/user-attachments/assets/c724ce7c-1c0f-4af8-8031-34704e43666b">
+
 ```python
 plt.figure(figsize=(8,4))
 sns.regplot(data=sample_sp, y='loudness', x='energy', color='#ffac33').set(title='Regression Plot - Loudness vs Energy Correlation')
