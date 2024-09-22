@@ -99,6 +99,7 @@ hmap.set_xticklabels(hmap.get_xticklabels(), rotation=90)
 - Green color represents positive correlation.
 - Blue color represents negative correlation.
 - Darker color indicates a stronger correlation.
+
 **Interpretation**
 - **Danceability and Energy:** As indicated by the bright green color, there is a strong positive correlation. In other words, songs with high danceability tend to also have high energy.
 - **Acousticness and Loudness:** As indicated by the blue color, there is a strong negative correlation. In other words, songs with high acousticness (such as those using acoustic guitars) tend to have low loudness.
