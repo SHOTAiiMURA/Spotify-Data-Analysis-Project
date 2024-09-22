@@ -204,6 +204,10 @@ sns.regplot(data=sample_sp, y='popularity', x='danceability', color='#3372ff').s
 **Strength of the Relationship:**
 - The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
 
+#### Based on those insights from this graph, the following can be considered:
+
+- Music Production: When creating energetic, loudness and danceability songs, there is a tendency for these songs to become more popular.
+- Music Streaming Services: By utilizing users' listening history and song characteristics, more personalized song recommendations can be provided.
 
 ```python
 tracks_data['dates']=tracks_data.index.get_level_values('release_date')
