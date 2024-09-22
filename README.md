@@ -23,12 +23,14 @@ tracks_data.head()
 pd.isnull(tracks_data).sum()
 ```
 <img width="192" alt="Screenshot 2024-09-22 at 22 24 03" src="https://github.com/user-attachments/assets/6a620bba-bee4-4472-ad75-78663509deae">
+
 # If there is Null Values in the Dataset
 ```python
 #checking null in feature data
 pd.isnull(feature_data).sum()
 ```
 <img width="183" alt="Screenshot 2024-09-22 at 22 24 44" src="https://github.com/user-attachments/assets/34958683-e40d-447d-85a1-e136180ae3af">
+
 # Overview of dataset
 ```python
 #Checking information in tracks data
