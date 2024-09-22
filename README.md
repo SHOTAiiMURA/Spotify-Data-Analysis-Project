@@ -84,6 +84,7 @@ tracks_data.duration.head()
 ```
 <img width="234" alt="Screenshot 2024-09-22 at 22 27 46" src="https://github.com/user-attachments/assets/a90d1ec0-adef-482a-8e33-14dcce12e9a6">
 
+## Heatmap
 ```python
 td = tracks_data.drop(['key','mode','explicit'], axis=1).corr(method = 'pearson')
 plt.figure(figsize=(9,5))
@@ -110,6 +111,7 @@ print(len(sample_sp))
 ```
 <img width="48" alt="Screenshot 2024-09-22 at 23 08 36" src="https://github.com/user-attachments/assets/c724ce7c-1c0f-4af8-8031-34704e43666b">
 
+##Regression Plot
 ```python
 plt.figure(figsize=(8,4))
 sns.regplot(data=sample_sp, y='loudness', x='energy', color='#ffac33').set(title='Regression Plot - Loudness vs Energy Correlation')
@@ -217,6 +219,7 @@ tracks_data.head()
 ```
 <img width="739" alt="Screenshot 2024-09-22 at 22 32 01" src="https://github.com/user-attachments/assets/e411eaca-972e-4537-a3e2-55bfe6bc2b54">
 
+##Histogram Analysis
 ```python
 sns.displot(years, discrete=True, aspect=2, height=4, kind='hist',color='g').set(title='Number of songs - per year')
 ```
