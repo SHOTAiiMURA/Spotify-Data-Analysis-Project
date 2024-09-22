@@ -353,8 +353,8 @@ sns.barplot(y = 'genre', x = 'popularity', data = Top).set(title='Genres by Popu
 **Trends in the Music Market:**
 - By analyzing the shifts in popularity among genres, insights can be gained regarding trends in the music market.
 
-##Summary
-###Applications of Histogram Analysis and Regression Plots in Business
+## Summary
+### Applications of Histogram Analysis and Regression Plots in Business
 
 **Music Streaming Services:**
 
@@ -388,7 +388,7 @@ sns.barplot(y = 'genre', x = 'popularity', data = Top).set(title='Genres by Popu
 **Promotion Strategies:**
 - When developing promotional strategies for songs, optimal methods can be selected based on song features and target audiences.
 
-##Future Prospects
+## Future Prospects
 
 **Utilization of Deep Learning:**
 - Research is advancing in music generation using deep learning and automatic classification of songs. Leveraging these technologies will enable more sophisticated music analysis.
