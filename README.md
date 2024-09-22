@@ -204,7 +204,7 @@ sns.regplot(data=sample_sp, y='popularity', x='danceability', color='#3372ff').s
 **Strength of the Relationship:**
 - The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
 
-#### Based on those insights from this graph, the following can be considered:
+## Based on those insights from this graph, the following can be considered:
 
 - Music Production: When creating energetic, loudness and danceability songs, there is a tendency for these songs to become more popular.
 - Music Streaming Services: By utilizing users' listening history and song characteristics, more personalized song recommendations can be provided.
@@ -222,6 +222,29 @@ sns.displot(years, discrete=True, aspect=2, height=4, kind='hist',color='g').set
 ```
 <img width="732" alt="Screenshot 2024-09-22 at 22 32 28" src="https://github.com/user-attachments/assets/e4be9c09-ea8e-4a79-972c-89e108c80b81">
 
+**Overview of the Graph**
+
+- This graph is a type of chart called a histogram, and it shows the trend in the number of songs released each year over a certain period.
+
+- X-axis: Year
+- Y-axis: Number of songs released each year
+**Insights from the Graph**
+
+**Increase in the Number of Songs:**
+- Looking at the entire graph, it is clear that the number of songs has been increasing year by year. In particular, there is a sharp increase after the 1980s. This can be attributed to factors such as the digitalization of the music industry and the spread of music streaming services.
+
+**Fluctuation in Song Numbers:**
+- The graph shows significant fluctuations in the number of songs released each year. These fluctuations could be influenced by trends in the music industry or social events. For example, a popular music genre in a particular year or changes in the economic climate may have impacted the increase or decrease in the number of songs.
+
+**Key Insights from the Graph**
+
+**Growth of the Music Industry:**
+- The graph indicates that the music industry has been expanding year by year.
+
+**Changes in Music Trends:**
+- From the yearly fluctuations in the number of songs, it is possible to understand how music trends have evolved over time.
+**Impact of External Factors:**
+- The graph allows us to analyze how social events and technological advancements have impacted the music industry.
 ```python
 total_dr = tracks_data.duration
 fig_dims = (15,5)
@@ -230,6 +253,31 @@ fig = sns.barplot(x = years, y = total_dr, ax = ax, errwidth = False).set(title=
 plt.xticks(rotation=90)
 ```
 <img width="736" alt="Screenshot 2024-09-22 at 22 33 03" src="https://github.com/user-attachments/assets/0dfee50a-1c4f-4427-b11f-f2e175f40ad0">
+
+**Explanation of the Graph**
+
+- This graph is a type of chart called a histogram, visually representing changes in the average length of songs released each year.
+
+- X-axis: Year
+- Y-axis: Song length (in seconds)
+**Insights from the Graph**
+
+**Song Length Trends:**
+- Overall, the length of songs appears to be relatively stable. There are no significant increases or decreases, indicating that the song lengths remain within a certain range over time.
+
+**Yearly Variations:**
+- Some slight fluctuations can be observed in song lengths from year to year. In certain years, shorter songs tend to dominate, while in others, longer songs are more common, showing subtle differences in yearly trends.
+
+**Key Insights from the Graph:**
+
+- Standardization of Song Length in the Music Industry:
+Many songs fall within a certain length range, suggesting that a general standard for song length has been established in the music industry.
+
+**Changes in Music Trends:**
+- Minor fluctuations in song lengths each year provide insights into how music trends have shifted over time. For example, shorter songs might have been more popular in a particular year, or longer songs were favored in another.
+
+**Changes in Listening Environments:**
+- The changes in song length may also be related to shifts in how people listen to music. For instance, the rise of smartphones might have led to the popularity of shorter songs that are easier to listen to on the go.
 
 ```python
 sns.set_style(style="whitegrid")
@@ -248,6 +296,28 @@ plt.ylabel('Genres')
 ```
 <img width="661" alt="Screenshot 2024-09-22 at 22 34 31" src="https://github.com/user-attachments/assets/07e72d4f-8f8e-4f5f-8896-cb1a63f5eef3">
 
+**Explanation of the Graph**
+
+- This graph is a type of chart called a histogram, visually representing the average length of songs across different music genres.
+- X-axis: Song length (in milliseconds)
+- Y-axis: Music genres
+**Insights from the Graph**
+
+**Song Length by Genre:**
+- The length of the bars for each genre represents the average song length in that genre.
+
+**Genre Characteristics:**
+- Longer songs: Genres like Classical, Opera, and Soundtrack tend to have longer average song lengths.
+- Shorter songs: Genres such as Pop, Rock, and Hip-Hop tend to have shorter average song lengths.
+**Diversity within Genres:**
+- Even within the same genre, there is noticeable variation in song lengths.
+
+**Key Insights from the Graph**
+**Characteristics of Music Genres:**
+- The tendencies in song length for each genre can provide insights into the genre's characteristics and historical background.
+
+**Relationship with Listening Environment:**
+- Song length is likely closely related to the environment in which the music is consumed and the preferences of the listeners.
 ```python
 sns.set_style(style='darkgrid')
 plt.figure(figsize=(8,4))
@@ -256,3 +326,19 @@ sns.barplot(y = 'genre', x = 'popularity', data = Top).set(title='Genres by Popu
 ```
 <img width="732" alt="Screenshot 2024-09-22 at 22 34 41" src="https://github.com/user-attachments/assets/8a328e7e-d7ac-43f0-a843-82368d4631e0">
 
+**Explanation of the Graph**
+- This graph is a type of chart called a bar chart, visually representing the top five most popular music genres and their popularity.
+- X-axis: Popularity (higher values indicate greater popularity)
+- Y-axis: Music genres
+**Insights from the Graph**
+**Top Popular Genres:**
+- From this graph, it is clear that the top five most popular genres are "Reggaeton," "Hip-Hop," "Rap," "Pop," and "Dance."
+**Differences in Popularity:**
+- There is a noticeable difference in popularity among the genres. The graph visually confirms that Reggaeton is the most popular genre, while Dance ranks fifth.
+**Key Insights from the Graph:**
+**Current Music Trends:**
+- This graph indicates which music genres are currently the most popular in the music scene.
+**Target Audience Analysis:**
+- By analyzing the characteristics of each genre, one can infer the demographics and preferences of their listeners.
+**Trends in the Music Market:**
+- By analyzing the shifts in popularity among genres, insights can be gained regarding trends in the music market.
