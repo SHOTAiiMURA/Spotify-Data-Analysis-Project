@@ -1,6 +1,7 @@
 # Spotify-Data-Analysis-Project
 ![image](https://github.com/user-attachments/assets/3fc67c7d-703a-46b8-8a95-f0acb49b84ac)
 
+
 # Introduction
 In today's data-driven world, the ability to extract meaningful insights from vast datasets is indispensable across various fields, including business, economics, research, and even methodology. This project spotlights Spotify, the world's largest music streaming platform, demonstrating the pivotal role data plays in informed business and marketing decisions, user research, and even potential applications in predictive modeling.
 
@@ -388,8 +389,10 @@ sns.barplot(y = 'genre', x = 'popularity', data = Top).set(title='Genres by Popu
 
 # Future Prospects
 
-**Utilization of Deep Learning:**Research is advancing in music generation using deep learning and automatic classification of songs. Leveraging these technologies will enable more sophisticated music analysis.
+**Utilization of Deep Learning:**　Research is advancing in music generation using deep learning and automatic classification of songs. Leveraging these technologies will enable more sophisticated music analysis.
+Analysis of chord progression and buzziness using Spotify dataset, Python, and machine learning
 
 **Real-Time Analysis:** Using real-time data from streaming services to rapidly understand music trends will be crucial for responsive business development.
 
 **Integration with Diverse Data:** By combining music data with various types of data, such as social media and economic data, more comprehensive analyses can be conducted.
+
