@@ -98,7 +98,7 @@ tracks_data.duration.head()
 ```
 <img width="234" alt="Screenshot 2024-09-22 at 22 27 46" src="https://github.com/user-attachments/assets/a90d1ec0-adef-482a-8e33-14dcce12e9a6">
 
-# Collilation
+# Correlation
 # Heatmap
 ```python
 td = tracks_data.drop(['key','mode','explicit'], axis=1).corr(method = 'pearson')
@@ -127,7 +127,7 @@ print(len(sample_sp))
 ```
 <img width="48" alt="Screenshot 2024-09-22 at 23 08 36" src="https://github.com/user-attachments/assets/c724ce7c-1c0f-4af8-8031-34704e43666b">
 
-# Collilation
+# Correlation
 # Regression Plot
 ```python
 plt.figure(figsize=(8,4))
