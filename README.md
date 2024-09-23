@@ -102,7 +102,7 @@ hmap.set_xticklabels(hmap.get_xticklabels(), rotation=90)
 - Darker color indicates a stronger correlation.
 
 **Interpretation**
-- **Danceability and Energy:** As indicated by the bright green color, there is a strong positive correlation. In other words, songs with high danceability tend to also have high energy.
+**Danceability and Energy:** As indicated by the bright green color, there is a strong positive correlation. In other words, songs with high danceability tend to also have high energy.
 - **Acousticness and Loudness:** As indicated by the blue color, there is a strong negative correlation. In other words, songs with high acousticness (such as those using acoustic guitars) tend to have low loudness.
 
 ```python
@@ -129,8 +129,7 @@ sns.regplot(data=sample_sp, y='loudness', x='energy', color='#ffac33').set(title
 - Orange Dots: Represent individual song data, plotted according to their values on the X and Y axes.
 - Orange Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
 **Insights from the Graph**
-**Relationship between Energy and Loudness:**
-- The higher the energy of a song, the higher its loudness tends to be. This suggests that, in general, more energetic songs are also louder.
+**Relationship between Energy and Loudness:** The higher the energy of a song, the higher its loudness tends to be. This suggests that, in general, more energetic songs are also louder.
 
 **Strength of the Relationship:**
 - The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
@@ -153,8 +152,7 @@ sns.regplot(data=sample_sp, y='popularity', x='energy', color='#3372ff').set(tit
 - Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
 **Insights from the Graph**
 
-**Relationship between Energy and Popularity:**
-- Songs with higher energy tend to have higher popularity. This suggests that, in general, more energetic songs are more likely to become popular.
+**Relationship between Energy and Popularity:** Songs with higher energy tend to have higher popularity. This suggests that, in general, more energetic songs are more likely to become popular.
 
 **Strength of the Relationship:**
 - The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
@@ -177,8 +175,7 @@ sns.regplot(data=sample_sp, y='popularity', x='acousticness', color='#3372ff').s
 - Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
 **Insights from the Graph**
 
-**Relationship between Acousticness and Popularity:**
-- Songs with higher acousticness (e.g., those using acoustic guitars) tend to have lower popularity. This suggests that, in general, acoustic songs are less likely to become popular.
+**Relationship between Acousticness and Popularity:** Songs with higher acousticness (e.g., those using acoustic guitars) tend to have lower popularity. This suggests that, in general, acoustic songs are less likely to become popular.
 
 **Strength of the Relationship:**
 - The slope of the regression line is negative, indicating a negative correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
@@ -200,11 +197,9 @@ sns.regplot(data=sample_sp, y='popularity', x='danceability', color='#3372ff').s
 - Blue Line: Represents the best-fitting line (regression line) for the data, indicating the strength and direction of the relationship between the two variables.
 **Insights from the Graph**
 
-**Relationship between Danceability and Popularity:**
-- Songs with higher danceability tend to have higher popularity. This suggests that, in general, songs that are easier to dance to are more likely to become popular.
+**Relationship between Danceability and Popularity:** Songs with higher danceability tend to have higher popularity. This suggests that, in general, songs that are easier to dance to are more likely to become popular.
 
-**Strength of the Relationship:**
-- The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
+**Strength of the Relationship:** The slope of the regression line is positive, indicating a positive correlation between the two variables. However, there is significant variation in the data, meaning not all songs follow this trend strictly.
 
 ## Based on those insights from this graph, the following can be considered:
 
@@ -233,19 +228,15 @@ sns.displot(years, discrete=True, aspect=2, height=4, kind='hist',color='g').set
 - Y-axis: Number of songs released each year
 **Insights from the Graph**
 
-**Increase in the Number of Songs:**
-- Looking at the entire graph, it is clear that the number of songs has been increasing year by year. In particular, there is a sharp increase after the 1980s. This can be attributed to factors such as the digitalization of the music industry and the spread of music streaming services.
+**Increase in the Number of Songs:** Looking at the entire graph, it is clear that the number of songs has been increasing year by year. In particular, there is a sharp increase after the 1980s. This can be attributed to factors such as the digitalization of the music industry and the spread of music streaming services.
 
-**Fluctuation in Song Numbers:**
-- The graph shows significant fluctuations in the number of songs released each year. These fluctuations could be influenced by trends in the music industry or social events. For example, a popular music genre in a particular year or changes in the economic climate may have impacted the increase or decrease in the number of songs.
+**Fluctuation in Song Numbers:** The graph shows significant fluctuations in the number of songs released each year. These fluctuations could be influenced by trends in the music industry or social events. For example, a popular music genre in a particular year or changes in the economic climate may have impacted the increase or decrease in the number of songs.
 
 **Key Insights from the Graph**
 
-**Growth of the Music Industry:**
-- The graph indicates that the music industry has been expanding year by year.
+**Growth of the Music Industry:** The graph indicates that the music industry has been expanding year by year.
 
-**Changes in Music Trends:**
-- From the yearly fluctuations in the number of songs, it is possible to understand how music trends have evolved over time.
+**Changes in Music Trends:** From the yearly fluctuations in the number of songs, it is possible to understand how music trends have evolved over time.
 **Impact of External Factors:**
 - The graph allows us to analyze how social events and technological advancements have impacted the music industry.
 ```python
@@ -265,19 +256,15 @@ plt.xticks(rotation=90)
 - Y-axis: Song length (in seconds)
 **Insights from the Graph**
 
-**Song Length Trends:**
-- Overall, the length of songs appears to be relatively stable. There are no significant increases or decreases, indicating that the song lengths remain within a certain range over time.
+**Song Length Trends:** Overall, the length of songs appears to be relatively stable. There are no significant increases or decreases, indicating that the song lengths remain within a certain range over time.
 
-**Yearly Variations:**
-- Some slight fluctuations can be observed in song lengths from year to year. In certain years, shorter songs tend to dominate, while in others, longer songs are more common, showing subtle differences in yearly trends.
+**Yearly Variations:** Some slight fluctuations can be observed in song lengths from year to year. In certain years, shorter songs tend to dominate, while in others, longer songs are more common, showing subtle differences in yearly trends.
 
 **Key Insights from the Graph:**
 
-- Standardization of Song Length in the Music Industry:
-Many songs fall within a certain length range, suggesting that a general standard for song length has been established in the music industry.
+**Standardization of Song Length in the Music Industry:** Many songs fall within a certain length range, suggesting that a general standard for song length has been established in the music industry.
 
-**Changes in Music Trends:**
-- Minor fluctuations in song lengths each year provide insights into how music trends have shifted over time. For example, shorter songs might have been more popular in a particular year, or longer songs were favored in another.
+**Changes in Music Trends:** Minor fluctuations in song lengths each year provide insights into how music trends have shifted over time. For example, shorter songs might have been more popular in a particular year, or longer songs were favored in another.
 
 **Changes in Listening Environments:**
 - The changes in song length may also be related to shifts in how people listen to music. For instance, the rise of smartphones might have led to the popularity of shorter songs that are easier to listen to on the go.
@@ -316,18 +303,15 @@ plt.ylabel('Genres')
 - Y-axis: Music genres
 **Insights from the Graph**
 
-**Song Length by Genre:**
-- The length of the bars for each genre represents the average song length in that genre.
+**Song Length by Genre:** The length of the bars for each genre represents the average song length in that genre.
 
 **Genre Characteristics:**
 - Longer songs: Genres like Classical, Opera, and Soundtrack tend to have longer average song lengths.
 - Shorter songs: Genres such as Pop, Rock, and Hip-Hop tend to have shorter average song lengths.
-**Diversity within Genres:**
-- Even within the same genre, there is noticeable variation in song lengths.
+**Diversity within Genres:** Even within the same genre, there is noticeable variation in song lengths.
 
 **Key Insights from the Graph**
-**Characteristics of Music Genres:**
-- The tendencies in song length for each genre can provide insights into the genre's characteristics and historical background.
+**Characteristics of Music Genres:** The tendencies in song length for each genre can provide insights into the genre's characteristics and historical background.
 
 **Relationship with Listening Environment:**
 - Song length is likely closely related to the environment in which the music is consumed and the preferences of the listeners.
@@ -346,65 +330,49 @@ sns.barplot(y = 'genre', x = 'popularity', data = Top).set(title='Genres by Popu
 
 **Insights from the Graph**
 
-**Top Popular Genres:**
-- From this graph, it is clear that the top five most popular genres are "Reggaeton," "Hip-Hop," "Rap," "Pop," and "Dance."
+**Top Popular Genres:** From this graph, it is clear that the top five most popular genres are "Reggaeton," "Hip-Hop," "Rap," "Pop," and "Dance."
 
-**Differences in Popularity:**
-- There is a noticeable difference in popularity among the genres. The graph visually confirms that Reggaeton is the most popular genre, while Dance ranks fifth.
+**Differences in Popularity:** There is a noticeable difference in popularity among the genres. The graph visually confirms that Reggaeton is the most popular genre, while Dance ranks fifth.
 
 **Key Insights from the Graph:**
 
-**Current Music Trends:**
-- This graph indicates which music genres are currently the most popular in the music scene.
+**Current Music Trends:** This graph indicates which music genres are currently the most popular in the music scene.
 
-**Target Audience Analysis:**
-- By analyzing the characteristics of each genre, one can infer the demographics and preferences of their listeners.
+**Target Audience Analysis:** By analyzing the characteristics of each genre, one can infer the demographics and preferences of their listeners.
 
-**Trends in the Music Market:**
-- By analyzing the shifts in popularity among genres, insights can be gained regarding trends in the music market.
+**Trends in the Music Market:** By analyzing the shifts in popularity among genres, insights can be gained regarding trends in the music market.
 
 # Summary
 ## Applications of Histogram Analysis and Regression Plots in Business
 
 **Music Streaming Services:**
 
-**Personalization:**
-- By utilizing user listening histories, song lengths, genres, and other data, more personalized song recommendations can be made.
+**Personalization:** By utilizing user listening histories, song lengths, genres, and other data, more personalized song recommendations can be made.
 
-**Playlist Creation:**
-- Based on trends in popular genres and song lengths, engaging playlists can be created.
+**Playlist Creation:** Based on trends in popular genres and song lengths, engaging playlists can be created.
 
 **Record Labels:**
 
-- Song Production:
-- Strategies can be developed for creating hit songs by referencing the characteristics of popular genres and song lengths.
+**Song Production:** Strategies can be developed for creating hit songs by referencing the characteristics of popular genres and song lengths.
 
-**Artist Development:**
-- New artists can be discovered, and song production and promotion can be tailored to maximize their strengths.
+**Artist Development:** New artists can be discovered, and song production and promotion can be tailored to maximize their strengths.
 
 **Music Events:**
 
-**Event Planning:**
-- Songs and artists can be selected to match the interests of attendees, leading to more appealing events.
+**Event Planning:** Songs and artists can be selected to match the interests of attendees, leading to more appealing events.
 
-**Ticket Sales:**
-- Based on past data, pricing and sales strategies for tickets can be developed.
+**Ticket Sales:** Based on past data, pricing and sales strategies for tickets can be developed.
 
 **Marketing:**
 
-**Target Audience Identification:**
-- By linking song characteristics with listener demographics, more effective targeting can be achieved.
+**Target Audience Identification:** By linking song characteristics with listener demographics, more effective targeting can be achieved.
 
-**Promotion Strategies:**
-- When developing promotional strategies for songs, optimal methods can be selected based on song features and target audiences.
+**Promotion Strategies:** When developing promotional strategies for songs, optimal methods can be selected based on song features and target audiences.
 
 # Future Prospects
 
-**Utilization of Deep Learning:**
-- Research is advancing in music generation using deep learning and automatic classification of songs. Leveraging these technologies will enable more sophisticated music analysis.
+**Utilization of Deep Learning:**Research is advancing in music generation using deep learning and automatic classification of songs. Leveraging these technologies will enable more sophisticated music analysis.
 
-**Real-Time Analysis:**
-- Using real-time data from streaming services to rapidly understand music trends will be crucial for responsive business development.
+**Real-Time Analysis:** Using real-time data from streaming services to rapidly understand music trends will be crucial for responsive business development.
 
-**Integration with Diverse Data:**
-- By combining music data with various types of data, such as social media and economic data, more comprehensive analyses can be conducted.
+**Integration with Diverse Data:** By combining music data with various types of data, such as social media and economic data, more comprehensive analyses can be conducted.
