@@ -93,6 +93,7 @@ popularSongs[["name","popularity","artists"]]
 <img width="672" alt="Screenshot 2024-09-22 at 22 27 14" src="https://github.com/user-attachments/assets/06962fce-392b-4ad2-b4e3-f74d4870f22d">
 
 ```python
+#Converting from millimeters to seconds
 tracks_data["duration"]=tracks_data["duration_ms"].apply(lambda x: round(x/1000))
 tracks_data.drop('duration_ms', inplace = True, axis=1)
 tracks_data.duration.head()
